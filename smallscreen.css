@@ -1,0 +1,85 @@
+/* body vaste breede om te voorkomen dat navigatiebalk de hele tijd moet verschuiven */
+body {
+	margin:0;
+	width: 1300px;
+}
+.headerbalk{
+	height: 80px;
+	width: 98%;
+	background-color: #3B8686;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.instagramButton{
+	border: none;
+	background-color: #3B8686;
+}
+.facebookButton{
+	border: none;
+	background-color: #3B8686;
+}
+
+.phoneNumber{
+	float: left;
+}
+.facebookInstagram {
+	float: right; 
+	margin-top: 5px;
+	margin-right: 4%;
+}
+
+.logo{
+	margin-left: 30px;
+}
+.navigation{
+	margin-top: 60px;
+	margin-right: 5%;
+	font-size: 30px;
+	float: right
+}
+a{
+	margin-left:10px;
+}
+a:link {
+	color: #3B8686;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #3B8686;
+	text-decoration: none;
+}
+
+a:hover {
+	color: orange;
+	text-decoration: none;
+}
+
+a:active {
+	color: orange;
+	text-decoration: none;
+}
+/* vaste width om mee te gaan met vaste body*/
+.footerbalk{
+	position: absolute;
+	height: 40px;
+	width: 1274px;
+	background-color: #3B8686;
+	margin-left: 1%;
+	margin-right: 1%;
+	bottom:0;
+	color: white;
+}
+/* vaste margin in span --> blijft relatief*/
+.footerTextLeft{
+	margin-left: 20px;
+	margin-top: 10px;
+	float: left;
+}
+/* vaste margin in span --> blijft relatief*/
+.footerTextRight{
+	float: right;
+	margin-right: 20px;
+	margin-top: 10px;
+}

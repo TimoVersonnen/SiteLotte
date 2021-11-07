@@ -1,0 +1,47 @@
+<html>
+<!-- note to self, check op /'en -->
+	<head>
+	<!-- bij veranderen van css zal footer omhoog springen door het bijkomen van een scrollbar onderaan, met text in body zal dit niet zichtbaar zijn -->
+		<link rel='stylesheet' media="(min-width: 1300px)" type='text/css' href='widescreen.css'>
+		<link rel='stylesheet' media="(max-width: 1300px)" and "(min-width: 500px") type='text/css' href='smallscreen.css'>
+		<!-- krijg in mobiele versie deze css niet getriggerd, op desktop wel, reden: ??
+		<link rel='stylesheet' media="(max-width: 500px)" type='text/css' href='phone.css'>
+		-->
+	<header>
+		<div class="headerBalk">
+			<span class="phoneNumber">
+			<!-- telefoonnummer en email in foto om spam te vermijden -->
+				<img class="imgPhoneEmail" src="phoneEmail.png" alt="telefoonnummer en email">
+			</span>
+			<span class="facebookInstagram">
+			<!-- knoppen openen sociale media in nieuw tab -->
+				<button class="facebookButton" onclick=" window.open('https://www.facebook.com/dietisteLotteStouthuysen','_blank')">
+					<img src="facebookLogo.png" alt="facebook">
+				</button>
+				<button class="instagramButton">
+				<img src="instagramLogo.png" alt="instagram" onclick=" window.open('https://www.instagram.com/dietistelottestouthuysen/','_blank')">
+				</button>
+			</span>
+		</div>
+		<div class="logo">
+			<img src="logo.png" alt="logo">
+			<span class="navigation">
+				<a href="home.html">Home</a> <a href=""> Werkwijzen </a> <a href="">Tarieven & terugbetaling</a> <a href="">Blog & recepten<a> <a href="">Contact</a>
+			</span>
+		</div>
+	</header>
+	<body>
+	<!-- op te vullen door op de knoppen in navigatie de drukken, standaard home -->
+	</body>
+	<footer>
+	<div class="footerbalk">
+		<span class="footerTextLeft">
+			&#169 2021 Di&#235tiste Lotte
+		</span>
+		<span class="footerTextRight">
+		<!-- link naar textdocument download? nakijken of dit nodig is / wat erin te zetten -->
+			Gebruiksvoorwaarden | Cookiebeleid | Privacy policy
+		</span>
+	</div>
+	</footer>
+</html>
