@@ -18,7 +18,6 @@ body {
 	background-color: #3B8686;
 }
 
-
 .phoneNumber{
 	float: left;
 }
@@ -42,13 +41,6 @@ body {
 /* eventueel uitzoeken hoe de actieve pagina onderstreept kan zijn */
 a{
 	margin-left:10px;
-}
-a:link {
-	color: #3B8686;
-	text-decoration: none;
-}
-
-a:visited {
 	color: #3B8686;
 	text-decoration: none;
 }
@@ -56,13 +48,16 @@ a:visited {
 a:hover {
 	color: orange;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 a:active {
 	color: orange;
 	text-decoration: none;
+	cursor: pointer;
 }
-/* footerbal absolute positie niet fixed om te voorkomen dat deze permanent aan de onderkant van het scherm hangt, niet mooi! */
+
+/* footerbalk absolute positie niet fixed om te voorkomen dat deze permanent aan de onderkant van het scherm hangt, niet mooi! */
 .footerbalk{
 	position: absolute;
 	height: 40px;
