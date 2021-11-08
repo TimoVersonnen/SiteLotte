@@ -33,6 +33,7 @@ h1{
 	display: inline-block; 
 	margin-top: 100px;
 }
+
 .bodyText2{
 	display: inline-block; 
 	float: top;
@@ -42,6 +43,13 @@ h1{
 	font-size: 25px;
 	vertical-align: top;
 }
+
+.columnTarieven {
+	float: left;
+	width: 50%;
+	padding: 10px;
+  }
+
 .headerbalk{
 	height: 80px;
 	width: 98%;
