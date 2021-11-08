@@ -1,9 +1,7 @@
 <html>
 	<head>
-		<link rel='stylesheet' media="(min-width: 1350px)" type='text/css' href='widescreen.css'>
-		<link rel='stylesheet' media="(max-width: 1350px) and (min-width: 500px)" type='text/css' href='smallscreen.css'>
-		<!-- krijg in mobiele versie deze css niet getriggerd, op desktop wel, reden: ?? -->
-		<link rel='stylesheet' media="(max-width: 500px)" type='text/css' href='phone.css'>
+		<link rel='stylesheet' media="(min-width: 1500px)" type='text/css' href='widescreen.css'>
+		<link rel='stylesheet' media="(max-width: 1500px) and (min-width: 500px)" type='text/css' href='smallscreen.css'>
 		<style>
 		.bodyhome{
 	display: block;
@@ -84,6 +82,9 @@ document.getElementById("blogBody").disabled = "true";
 document.getElementById("contactBody").style.display = "block";
 document.getElementById("contactBody").disabled = "false";
 }
+function sendEmail(){
+window.open('mailto:info@dietistlotte.be?subject=afspraak bij dietiste Lotte&body=voornaam: ' + document.getElementById("voornaam").value + '%0D%0A' +'naam: ' +document.getElementById("achternaam").value + '%0D%0A' + 'telefoonnummer(niet verplicht): '+ document.getElementById("telefoon").value + '%0D%0A' + 'Bericht: '+ document.getElementById("bericht").value);
+}
 </script>
 	</head>
 	<header>
@@ -92,8 +93,8 @@ document.getElementById("contactBody").disabled = "false";
 				<img class="imgPhoneEmail" src="phoneEmail.png" alt="telefoonnummer en email">
 			</span>
 			<span class="facebookInstagram">
-				<button class="facebookButton" onclick=" window.open('https://www.facebook.com/dietisteLotteStouthuysen','_blank')">
-					<img src="facebookLogo.PNG" alt="facebook">
+				<button class="facebookButton">
+					<img src="facebookLogo.PNG" alt="facebook" onclick=" window.open('https://www.facebook.com/dietisteLotteStouthuysen','_blank')">
 				</button>
 				<button class="instagramButton">
 				<img src="instagramLogo.PNG" alt="instagram" onclick=" window.open('https://www.instagram.com/dietistelottestouthuysen/','_blank')">
@@ -106,7 +107,6 @@ document.getElementById("contactBody").disabled = "false";
 				<a onclick="enableHome()">Home</a> <a onclick="enableWerkwijzen()"> Werkwijzen <a onclick="enableTarieven()">Tarieven & terugbetaling</a> <a onclick="enableBlog()">Blog & recepten<a> <a onclick="enableContact()">Contact</a>
 			</span>
 		</div>
-		
 	</header>
 	<body>
 	<noscript>
@@ -142,7 +142,7 @@ document.getElementById("contactBody").disabled = "false";
 	<br>
 	<span  class="bodyblock2">
 	<span>
-		<img src="bodyImage2.PNG" alt="bodyImg2" width="1000" height="1000">
+		<img class="resizeableImage" src="bodyImage2.PNG" alt="bodyImg2">
 	</span>
 	<span class="bodyText2">
 	<h1 style="	
@@ -224,25 +224,84 @@ document.getElementById("contactBody").disabled = "false";
 		</div>
 	</div>
 	<div id="tarievenBody" class="bodyTarieven" disabled="true">
-		<div class="column" >
+		<span>
+			<img src="tarieven.svg" style="size: 50%; float: right; padding: 7pc;">
 			<h1 style="height: 71px;color: #3B8686;
 			font-family: Nunito Sans;
 			font-size: 52px;
 			letter-spacing: 0;
 			line-height: 71px;">
-			Tarieven & terugbetaling</h1>
+			Tarieven</h1>
+			
+			<div >
+				<div style="float: left; padding: 5px;width: 20pc;height: 180px;border-radius: 20px;background-color: #EBF2F2;margin: 2pc;">
+					<p style="color: #3B8686;font-family: Nunito Sans;font-size: 36px;letter-spacing: 0;text-align: center;">30 minuten</p>
+					<p style="color: #D4AF37;font-family: Nunito Sans;font-size: 44px;font-weight: bold;letter-spacing: 0;text-align: center;">€ 25</p>	
+				</div>
+				<div style="float: left; padding: 5px;width: 20pc;height: 180px;border-radius: 20px;background-color: #EBF2F2;margin: 2pc;">
+					<p style="color: #3B8686;font-family: Nunito Sans;font-size: 36px;letter-spacing: 0;text-align: center;">1 uur</p>
+					<p style="color: #D4AF37;font-family: Nunito Sans;font-size: 44px;font-weight: bold;letter-spacing: 0;text-align: center;">€ 55</p>	
+				</div>
+			</div>
+			
+			<h1 style="height: 71px;color: #3B8686;
+			font-family: Nunito Sans;
+			font-size: 52px;
+			letter-spacing: 0;
+			line-height: 71px;">
+			Terugbetaling
+			<p style="width: 50pc; color: #0B1A1A;font-family: Montserrat;font-size: 24px;letter-spacing: 0;line-height: 29px;">
+				Voor kinderen tussen 6 en 17 jaar met obesitas en overgewicht is er een terugbetaling voorzien. Het is belangrijk dat dit besproken wordt met de huisarts voordat u naar een diëtist gaat.
+				<br><br>
+				Daarnaast geven verschillende mutualiteiten andere terugbetalingen. Ook dit kunt u best met uw mutualiteit bespreken.
+			</p></h1>
 
-		</div>
-		<div class="column" >
-			  
-		</div>
-	test3
+		</span>
+	
 	</div>
 	<div id="blogBody" class="bodyBlog" disabled="true">
-	test4
+	<embed width="95%" height="1500px" src="https://www.instagram.com/dietistelottestouthuysen/" target="_blank">
 	</div>
 	<div id="contactBody" class="bodyContact" disabled="true">
-	test5
+	<div class="contactForm">
+	<h1 style="color: #3B8686;
+			font-family: Nunito Sans;
+			font-size: 52px;">
+		Contacteer mij</h1><br><br>
+		<span">
+		<h1 style="color: #3B8686;
+			font-family: Nunito Sans;
+			font-size: 32px;
+			word-spacing: 320px;">
+			 Voornaam*
+			 Achternaam*
+			 </h1>
+		</span>
+		<h1 style="color: #3B8686;
+			font-family: Nunito Sans;
+			font-size: 32px;
+			word-spacing: 80px;">
+		<br>
+		<input type="text" id="voornaam" name="voornaam" style="margin-right: 80px;" placeholder="voornaam">
+		<input type="text" id="achternaam" name="achternaam" placeholder="achternaam">
+		<br><br>
+		Telefoonnummer </p>
+		<input type="text" id="telefoon" name="telefoon" placeholder="telefoonnummer"><br><br>
+		Bericht* </p>
+		<textarea id="bericht" name="bericht" placeholder="type hier uw bericht"></textarea> <br><br>
+		</h1>
+		<button style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 24px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;" onclick="sendEmail()"> verzenden </button>
+	</div>
+	<div class="contactInfo">
+		Diëtiste Lotte Stouthuysen
+		<img src="facebookLogoYellow.PNG" alt="facebookLogo" onclick=" window.open('https://www.facebook.com/dietisteLotteStouthuysen','_blank')">
+		<img src="instagramLogoYellow.PNG" alt="instagramLogo" onclick=" window.open('https://www.instagram.com/dietistelottestouthuysen/','_blank')"> 
+		<br><br>
+		<img src="contactInfo.PNG" alt="Telefoonnummer&Email"><br><br>
+		RIZIV-nummer: 5-63594-73-601<br><br>
+		U kan bij mij terecht van maandag tot donderdag. Hoofdzakelijk hou ik mijn consultaties online via skype. Wilt u toch liever face-to-face? Dat kan zeker! Elke dinsdag ben ik te vinden in Leuven, Martelarenplein 20 E.
+
+	</div>
 	</div>
 	</body>
 	<footer>

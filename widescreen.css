@@ -4,6 +4,46 @@ body {
 h1{
 	font-weight:normal;
 }
+label{
+	width: 800px;
+}
+input{
+	width: 300px;
+	padding: 20px;
+	border: none;
+	font-size: 30px;
+	border-bottom: 5px solid #D4AF37;
+	
+}
+textarea{
+	width: 800px;
+	height: 100px;
+	padding:20px;
+	font-size: 30px;
+	border: none;
+	border-bottom: 5px solid #D4AF37;
+}
+.contactInfo{
+	 vertical-align: top;
+	 display: inline-block;
+	 background-color: #D4AF37;
+	 color: white;
+	 border-radius: 12px;
+	 padding: 40px;
+	 font-size: 24px;
+	 height: 520px;
+	 width: 700px;
+	 margin-top: 300px;
+	 line-height: 1.2;
+	 font-family: Nunito Sans Bold;
+}
+.contactForm{
+	margin-left: 10%;
+	margin-top: 75px;
+	 display: inline-block;
+	 width: 50%;
+	 margin-bottom: 200px;
+}
 .bodyHome{
 	margin-top: 100px;
 	margin-left: 10%;
@@ -62,15 +102,12 @@ h1{
 	border: none;
 	background-color: #3B8686;	
 }
-.instagramButton:hover{
+button:hover{
 	cursor: pointer;
 }
 .facebookButton{
 	border: none;
 	background-color: #3B8686;
-}
-.facebookButton:hover{
-	cursor: pointer;
 }
 .phoneNumber{
 	float: left;
