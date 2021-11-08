@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<link rel='stylesheet' media="(min-width: 1350px)" type='text/css' href='widescreen.css'>
-		<link rel='stylesheet' media="(max-width: 1350px) and (min-width: 500px")" type='text/css' href='smallscreen.css'>
+		<link rel='stylesheet' media="(max-width: 1350px) and (min-width: 500px)" type='text/css' href='smallscreen.css'>
 		<!-- krijg in mobiele versie deze css niet getriggerd, op desktop wel, reden: ?? -->
 		<link rel='stylesheet' media="(max-width: 500px)" type='text/css' href='phone.css'>
 		<style>
@@ -34,6 +34,7 @@ document.getElementById("blogBody").style.display = "none";
 document.getElementById("blogBody").disabled = "true";
 document.getElementById("contactBody").style.display = "none";
 document.getElementById("contactBody").disabled = "true";
+window.scrollTo(0, 0)
 }
 function enableWerkwijzen() {
 document.getElementById("homeBody").style.display = "none";
@@ -120,47 +121,75 @@ document.getElementById("contactBody").disabled = "false";
 			color: #3B8686;
 			font-family: Nunito Sans;
 			font-size: 52px;
-		  "} >Dietiste Lotte Stouthuysen helpt je 
-	opweg naar een gezonder leven!</h1>
+		  "} >
+		  Dietiste Lotte Stouthuysen helpt je 
+	opweg naar een <b> gezonder leven! </b>
+	</h1>
 	<br>
 	<h1 style="	
-			color: #3B8686;
-			font-family: Nunito Sans;
-			font-size: 52px;
+			color: #0B1A1A;
+			font-family: Montserrat Regular;
+			font-size: 28px;
 		  "} >
-	Klein wie ben ik tekstje. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. 
-	<h1>
+			Klein wie ben ik tekstje. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. 
+	</h1>
 	<br>
-	<button> Maak een afspraak </button> <a> Hoe ga ik te werk? </a>
+	<button style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 24px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;"> Maak een afspraak </button> <u> <a onclick="enableWerkwijzen()"> Hoe ga ik te werk? </a> </u>
 	</span>
 	<span>
-		<img src="bodyImage1.PNG" alt="bodyImg1">
+		<img src="bodyImage1.PNG" alt="bodyImg1" width="800" height="800">
 	</span>
 	<br>
+	<span  class="bodyblock2">
 	<span>
-		<img src="bodyImage2.PNG" alt="bodyImg2">
+		<img src="bodyImage2.PNG" alt="bodyImg2" width="1000" height="1000">
 	</span>
-	<span>
+	<span class="bodyText2">
+	<h1 style="	
+			color: #3B8686;
+			font-family: Nunito Sans SemiBold;
+			font-size: 44px;
+		  "} >
 	Wat doe ik?
+	</h1>
 	<br>
+	<h1 style="	
+			color: #0B1A1A;
+			font-family: Montserrat Regular;
+			font-size: 24px;
+		  "} >
 	Als erkend diëtiste help ik je naar een gezonde eet- en leefstijl. Omdat niet iedereen hetzelfde is, zowel biologisch, psychologisch en sociaal, werk ik met individuele programma’s afgestemd op de cliënt die op dat moment voor mij zit. Ik volg geen diëten of modetrends maar werk met voedingsadvies dat je kan volhouden.
+	<br>
 	<br>
 	Dit voedingsadvies stel ik samen op een wetenschappelijke manier zodat ik enkel de beste zorg kan aanbieden. Daarnaast blijf ik bijscholen om mij zo verder te verdiepen en te specialiseren.
 	<br>
-	U kan bij mij terecht voor:
-
+	<br>
+	<b>U kan bij mij terecht voor: </b>
+<br>
+<br>
 •	Overgewicht en obesitas
+<br>
 •	Verhoogde cholesterol
+<br>
 •	Obstipatie en diarree
+<br>
 •	Allergieën en intoleranties
+<br>
 •	Leververvetting
+<br>
 •	Galstenen
 •	Vegetarisch/veganistisch/ecologische voeding
+<br>
 •	Kinderen met eetproblemen (ook kinderen met autisme)
+<br>
 •	Begeleiding voor, tijdens en na de zwangerschap
+<br>
 •	Voeding bij PCOS
+<br>
 •	Ondervoeding en ondergewicht
 	</span>
+	</span>
+	<br>
 	</div>
     <div id="werkwijzenBody" class="bodyWerkwijzen" disabled="true">
 		<h1 style="	height: 71px;
@@ -170,7 +199,9 @@ document.getElementById("contactBody").disabled = "false";
 			font-size: 52px;
 			letter-spacing: 0;
 			line-height: 71px;""
-		  "} >Hoe ga ik te werk?</h1>
+		  "} >
+		  Hoe ga ik te werk?
+		  </h1>
 		<p style="height: 145px;
 		width: 877px;
 		color:#0B1A1A;
