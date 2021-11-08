@@ -2,6 +2,22 @@
 body {
 	margin:0;
 	width: 1300px;
+	margin-left: 10px;
+}
+.bodyHome{
+	margin-left: 2%;	
+}
+.bodyWerkwijzen{
+	margin-left: 2%;	
+}
+.bodyTarieven{
+	margin-left: 2%;	
+}
+.bodyBlog{
+	margin-left: 2%;	
+}
+.bodyContact{
+	margin-left: 2%;
 }
 .headerbalk{
 	height: 80px;
