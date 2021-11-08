@@ -1,6 +1,6 @@
 body {
 	margin:0;
-	width: 1500px;
+	width:1500px;
 }
 h1{
 	font-weight:normal;
@@ -54,7 +54,7 @@ textarea{
 	margin-left: 2%;	
 }
 .bodyTarieven{
-	margin-left: 2%;	
+	margin-left: 10%;
 }
 .bodyBlog{
 	margin-left: 2%;	
@@ -74,6 +74,7 @@ textarea{
 	display: inline-block; 
 	margin-top: 100px;
 }
+
 .bodyText2{
 	display: inline-block; 
 	float: top;
@@ -83,10 +84,13 @@ textarea{
 	font-size: 25px;
 	vertical-align: top;
 }
-.resizeableImage{
-	width: 750;
-	height: 750;
-}
+
+.columnTarieven {
+	float: left;
+	width: 50%;
+	padding: 10px;
+  }
+
 .headerbalk{
 	height: 80px;
 	width: 98%;
