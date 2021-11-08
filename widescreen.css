@@ -1,6 +1,9 @@
 body {
 	margin:0;
 }
+h1{
+	font-weight:normal;
+}
 .bodyHome{
 	margin-top: 100px;
 	margin-left: 10%;
@@ -20,8 +23,21 @@ body {
 }
 .bodyText1{
 	display: inline-block; 
-	float: top;
 	margin-left: 30px;
+	margin-top: 80px;
+	width: 40%;
+	font-size: 25px;
+	vertical-align: top;
+}
+.bodyblock2{
+	display: inline-block; 
+	margin-top: 100px;
+}
+.bodyText2{
+	display: inline-block; 
+	float: top;
+	margin-top: 80px;
+	margin-left: 80px;
 	width: 40%;
 	font-size: 25px;
 	vertical-align: top;
@@ -36,13 +52,18 @@ body {
 
 .instagramButton{
 	border: none;
-	background-color: #3B8686;
+	background-color: #3B8686;	
+}
+.instagramButton:hover{
+	cursor: pointer;
 }
 .facebookButton{
 	border: none;
 	background-color: #3B8686;
 }
-
+.facebookButton:hover{
+	cursor: pointer;
+}
 .phoneNumber{
 	float: left;
 }
