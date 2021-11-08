@@ -78,7 +78,7 @@ a:active {
 
 /* vaste width om mee te gaan met vaste body*/
 .footerbalk{
-	position: absolute;
+	position: relatief;
 	height: 40px;
 	width: 1274px;
 	background-color: #3B8686;
