@@ -40,13 +40,6 @@ body {
 }
 a{
 	margin-left:10px;
-}
-a:link {
-	color: #3B8686;
-	text-decoration: none;
-}
-
-a:visited {
 	color: #3B8686;
 	text-decoration: none;
 }
@@ -54,12 +47,19 @@ a:visited {
 a:hover {
 	color: orange;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 a:active {
 	color: orange;
 	text-decoration: none;
+	cursor: pointer;
 }
+
+.bodyWerkwijzen{
+
+}
+
 /* vaste width om mee te gaan met vaste body*/
 .footerbalk{
 	position: absolute;
