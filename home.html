@@ -45,6 +45,7 @@ document.getElementById("blogBody").style.display = "none";
 document.getElementById("blogBody").disabled = "true";
 document.getElementById("contactBody").style.display = "none";
 document.getElementById("contactBody").disabled = "true";
+window.scrollTo(0, 0)
 }
 function enableTarieven() {
 document.getElementById("homeBody").style.display = "none";
@@ -57,6 +58,7 @@ document.getElementById("blogBody").style.display = "none";
 document.getElementById("blogBody").disabled = "true";
 document.getElementById("contactBody").style.display = "none";
 document.getElementById("contactBody").disabled = "true";
+window.scrollTo(0, 0)
 }
 function enableBlog() {
 document.getElementById("homeBody").style.display = "none";
@@ -69,6 +71,7 @@ document.getElementById("blogBody").style.display = "block";
 document.getElementById("blogBody").disabled = "false";
 document.getElementById("contactBody").style.display = "none";
 document.getElementById("contactBody").disabled = "true";
+window.scrollTo(0, 0)
 }
 function enableContact() {
 document.getElementById("homeBody").style.display = "none";
@@ -81,9 +84,10 @@ document.getElementById("blogBody").style.display = "none";
 document.getElementById("blogBody").disabled = "true";
 document.getElementById("contactBody").style.display = "block";
 document.getElementById("contactBody").disabled = "false";
+window.scrollTo(0, 0)
 }
 function sendEmail(){
-window.open('mailto:info@dietistlotte.be?subject=afspraak bij dietiste Lotte&body=voornaam: ' + document.getElementById("voornaam").value + '%0D%0A' +'naam: ' +document.getElementById("achternaam").value + '%0D%0A' + 'telefoonnummer(niet verplicht): '+ document.getElementById("telefoon").value + '%0D%0A' + 'Bericht: '+ document.getElementById("bericht").value);
+window.open('mailto:lotte.stouthuysen@gmail.com?subject=afspraak bij dietiste Lotte&body=voornaam: ' + document.getElementById("voornaam").value + '%0D%0A' +'naam: ' +document.getElementById("achternaam").value + '%0D%0A' + 'telefoonnummer(niet verplicht): '+ document.getElementById("telefoon").value + '%0D%0A' + 'Bericht: '+ document.getElementById("bericht").value);
 }
 </script>
 	</head>
@@ -116,6 +120,7 @@ window.open('mailto:info@dietistlotte.be?subject=afspraak bij dietiste Lotte&bod
 	</noscript>
 		<!-- op te vullen door op de knoppen in navigatie de drukken, standaard home -->
 	<div id="homeBody" class="bodyHome">
+	<div class="bodyblock1">
 	<span class="bodyText1">
 	<h1 style="	
 			color: #3B8686;
@@ -134,17 +139,18 @@ window.open('mailto:info@dietistlotte.be?subject=afspraak bij dietiste Lotte&bod
 			Klein wie ben ik tekstje. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. 
 	</h1>
 	<br>
-	<button style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 24px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;"> Maak een afspraak </button> <u> <a onclick="enableWerkwijzen()"> Hoe ga ik te werk? </a> </u>
+	<button style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 24px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;" onclick="enableContact()"> Maak een afspraak </button> <u> <a onclick="enableWerkwijzen()"> Hoe ga ik te werk? </a> </u>
 	</span>
 	<span>
 		<img src="bodyImage1.PNG" alt="bodyImg1" width="800" height="800">
 	</span>
 	<br>
-	<span  class="bodyblock2">
+	</div>
+	<div  class="bodyblock2">
 	<span>
 		<img class="resizeableImage" src="bodyImage2.PNG" alt="bodyImg2">
 	</span>
-	<span class="bodyText2">
+	<div class="bodyText2">
 	<h1 style="	
 			color: #3B8686;
 			font-family: Nunito Sans SemiBold;
@@ -187,10 +193,18 @@ window.open('mailto:info@dietistlotte.be?subject=afspraak bij dietiste Lotte&bod
 •	Voeding bij PCOS
 <br>
 •	Ondervoeding en ondergewicht
-	</span>
-	</span>
-	<br>
+</div>
 	</div>
+	<br>
+	</h1>
+<div style="position: relatief;	width: 100%;margin-right: 1%; height: 250px;background-color: #EBF2F2;">
+		 <h1  style="margin-top: 20px; text-align: center;height: 60px;color: #3B8686;font-size: 44px;font-family: Nunito Sans;">Interesse? Neem contact op of maak een afspraak.</h1>
+		 <div style="display: flex; justify-content: center; align-items: center;">
+		 	<button style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 24px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;margin: 10px;" onclick="enableContact()"> Maak een afspraak </button> 
+		 	<button style="outline: none ; color: #D4AF37; Height: 80px; width: 260px; border-color: #D4AF37;border-width: 5px; font-size: 24px; font-family: Nunito Sans Bold; border-radius: 12px;margin: 10px;" onclick="enableContact()" > Contacteer mij </button> 
+		 </div>
+		</div>
+</div>
 
     <div id="werkwijzenBody" class="bodyWerkwijzen" disabled="true">
 		<span >
@@ -216,7 +230,7 @@ window.open('mailto:info@dietistlotte.be?subject=afspraak bij dietiste Lotte&bod
 		<div style="position: relatief;	width: 100%;margin-right: 1%; height: 250px;background-color: #EBF2F2;">
 		 <h1  style="margin-top: 20px; text-align: center;height: 60px;color: #3B8686;font-size: 44px;font-family: Nunito Sans;">Interesse? Neem contact op of maak een afspraak.</h1>
 		 <div style="display: flex; justify-content: center; align-items: center;">
-		 	<button style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 24px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;margin: 10px;"> Maak een afspraak </button> 
+		 	<button style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 24px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;margin: 10px;" onclick="enableContact()"> Maak een afspraak </button> 
 		 	<button style="outline: none ; color: #D4AF37; Height: 80px; width: 260px; border-color: #D4AF37;border-width: 5px; font-size: 24px; font-family: Nunito Sans Bold; border-radius: 12px;margin: 10px;" onclick="enableContact()" > Contacteer mij </button> 
 		 </div>
 		</div>
@@ -246,15 +260,25 @@ window.open('mailto:info@dietistlotte.be?subject=afspraak bij dietiste Lotte&bod
 		<div style="position: relatief;	width: 100%;margin-right: 1%; height: 250px;background-color: #EBF2F2;">
 			<h1  style="margin-top: 20px; text-align: center;height: 60px;color: #3B8686;font-size: 44px;font-family: Nunito Sans;">Interesse? Neem contact op of maak een afspraak.</h1>
 			<div style="display: flex; justify-content: center; align-items: center;">
-				<button style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 24px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;margin: 10px;"> Maak een afspraak </button> 
+				<button style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 24px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;margin: 10px;" onclick="enableContact()"> Maak een afspraak </button> 
 				<button style="outline: none ; color: #D4AF37; Height: 80px; width: 260px; border-color: #D4AF37;border-width: 5px; font-size: 24px; font-family: Nunito Sans Bold; border-radius: 12px;margin: 10px;" onclick="enableContact()" > Contacteer mij </button> 
 			</div>
 		</div>
 	</div>
 	<div id="blogBody" class="bodyBlog" disabled="true">
-	<embed width="95%" height="1500px" src="https://www.instagram.com/dietistelottestouthuysen/" target="_blank">
+	<embed width="95%" height="1500px" src="https://timoversonnen.blogspot.com/2021/11/blog-post.html" target="_blank">
+	<div style="position: relatief;	width: 100%;margin-right: 1%; height: 250px;background-color: #EBF2F2;">
+		 <h1  style="margin-top: 20px; text-align: center;height: 60px;color: #3B8686;font-size: 44px;font-family: Nunito Sans;">Interesse? Neem contact op of maak een afspraak.</h1>
+		 <div style="display: flex; justify-content: center; align-items: center;">
+		 	<button style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 24px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;margin: 10px;"onclick="enableContact()"> Maak een afspraak </button> 
+		 	<button style="outline: none ; color: #D4AF37; Height: 80px; width: 260px; border-color: #D4AF37;border-width: 5px; font-size: 24px; font-family: Nunito Sans Bold; border-radius: 12px;margin: 10px;" onclick="enableContact()" > Contacteer mij </button> 
+		 </div>
+		</div>
 	</div>
 	<div id="contactBody" class="bodyContact" disabled="true">
+	<h1 style="margin-left:5%; margin-top: 50px; color: #3B8686;	font-family: Nunito Sans;font-size: 24px;letter-spacing: 0;">
+	Online afspraak maken momenteel niet beschikbaar
+	</h1>
 	<div class="contactForm">
 	<h1 style="color: #3B8686;
 			font-family: Nunito Sans;
@@ -264,7 +288,7 @@ window.open('mailto:info@dietistlotte.be?subject=afspraak bij dietiste Lotte&bod
 		<h1 style="color: #3B8686;
 			font-family: Nunito Sans;
 			font-size: 32px;
-			word-spacing: 320px;">
+			word-spacing: 200px;">
 			 Voornaam*
 			 Achternaam*
 			 </h1>
@@ -282,12 +306,13 @@ window.open('mailto:info@dietistlotte.be?subject=afspraak bij dietiste Lotte&bod
 		Bericht* </p>
 		<textarea id="bericht" name="bericht" placeholder="type hier uw bericht"></textarea> <br><br>
 		</h1>
-		<button style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 24px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;" onclick="sendEmail()"> verzenden </button>
+		<button id="verstuurButton" style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 24px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;" onclick="sendEmail()"> verzenden </button>
+		<br>
 	</div>
 	<div class="contactInfo">
 		Diëtiste Lotte Stouthuysen
-		<img src="facebookLogoYellow.PNG" alt="facebookLogo" onclick=" window.open('https://www.facebook.com/dietisteLotteStouthuysen','_blank')">
-		<img src="instagramLogoYellow.PNG" alt="instagramLogo" onclick=" window.open('https://www.instagram.com/dietistelottestouthuysen/','_blank')"> 
+		<img class="yellowImage" src="facebookLogoYellow.PNG" alt="facebookLogo" onclick=" window.open('https://www.facebook.com/dietisteLotteStouthuysen','_blank')">
+		<img class="yellowImage" src="instagramLogoYellow.PNG" alt="instagramLogo" onclick=" window.open('https://www.instagram.com/dietistelottestouthuysen/','_blank')"> 
 		<br><br>
 		<img src="contactInfo.PNG" alt="Telefoonnummer&Email"><br><br>
 		RIZIV-nummer: 5-63594-73-601<br><br>
@@ -302,8 +327,7 @@ window.open('mailto:info@dietistlotte.be?subject=afspraak bij dietiste Lotte&bod
 			&#169 2021 Di&#235tiste Lotte
 		</span>
 		<span class="footerTextRight">
-		<!-- wat hierin?! textdocument downloaden? -->
-			Gebruiksvoorwaarden | Cookiebeleid | Privacy policy
+			<a class="gebruiksvoorwaarden" href="gebruiksvoorwaarden.txt" target="_bank"> Gebruiksvoorwaarden | Cookiebeleid | Privacy policy </a>
 		</span>
 	</div>
 	</footer>
